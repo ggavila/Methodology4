@@ -16,7 +16,7 @@ LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
 # 2) change to root to install packages (system level packages) 
 USER root
 
-RUN	apt-get install htop
+RUN	apt-get install htop -y
 RUN apt-get install aria2 -y
 RUN apt-get install nmap -y
 RUN apt-get install traceroute -y
