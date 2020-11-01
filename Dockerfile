@@ -17,9 +17,9 @@ LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
 USER root
 
 RUN	apt-get install htop
-RUN apt-get aria2 -y
-RUN apt-get nmap -y
-RUN apt-get traceroute -y
+RUN apt-get install aria2 -y
+RUN apt-get install nmap -y
+RUN apt-get install traceroute -y
 
 # 3) install packages
 RUN pip install --no-cache-dir networkx scipy python-louvain
